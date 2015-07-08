@@ -1,0 +1,22 @@
+
+
+#--------- PATHS with modules to be used -------#
+CNTJob PATHS SV 1
+../algos/
+
+
+#--------- ALGORITHMS-------#
+CNTJob ALGOS SV 1
+BGMixer
+
+#--------- ALGORITHM PARAMETERS-------#
+
+# output dst file with mixed BG events
+BGMixer OUTPUT_DST_NAME S NEW_MixedBG.root
+
+# input file with BG events of a given type
+BGMixer INTPUT_DST_NAME_1 S ../data/nexus_Na511CalibAnodeWithoutS1_1_GATE.root
+
+# input file with BG events of a given type
+BGMixer INTPUT_DST_NAME_2 S ../data/nexus_ThoriumCalibAnodeWithoutS1_1_GATE.root
+
